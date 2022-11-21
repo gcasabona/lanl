@@ -1,0 +1,4 @@
+  3       !Number of boundary parts (boundary conditions)
+1, 4000 !Viscous wall
+2, 5050 !Inflow
+3, 5051 !Outflow

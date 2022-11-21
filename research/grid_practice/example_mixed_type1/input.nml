@@ -1,0 +1,24 @@
+
+ &input_parameters
+               debug_mode = F
+               igrid_type = 3       !1=Prism, 2=Tet, 3=Prism/=Tet
+                    nr_gs = 8       !size of surface grid
+        construction_type = 1       !1=with target Re/y_plus, 2 =with dz
+                     rmax = 0.2     !(construct 1): thickness of BL region
+    target_reynolds_number= 1.0e+06 !(construct 1): target Re
+             target_yplus = 1.0e-4  !(construct 1): target y+
+          generate_k_file = F       !=T write structured indices, =F do not write.
+       generate_line_file = F       !=T generate line info, =F do not write
+              line_extent = 2       !=1 lines in BL, =2 all the way to outer.
+      generate_ugrid_file = T       !T = Write a .ugrid file.(required by the coarsening program)
+   ugrid_file_unformatted = T       !T = unformatted .ugrid/.ufmt, F = formatted .ugrid/.p3d
+      generate_tec_file_b = T       !T = Write a boundary grid (Tecplot)
+      generate_tec_file_v = T       !T = Write a volume grid (Tecplot)
+    generate_su2grid_file = F       !T = Write .su2 grid file.
+    generate_vtk_file     = F       !T = Write .vtk grid file.
+ /
+
+! This is an example of construciton type = 1.
+
+
+
